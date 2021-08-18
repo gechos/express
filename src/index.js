@@ -8,6 +8,10 @@ const app = express();
 const port = 5000
 app.set("db", 'gema');
 
+app.get("/", (_,res) => {
+
+  res.send('Malo');
+});
 app.get("/test", re);
 app.get("/users", users);
 
